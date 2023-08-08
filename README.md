@@ -12,6 +12,7 @@
 
 ## Steps I executed
 - I interacted with ChatGPT "Code interpreter" to transform files _table_A.csv_ and _table_B.csv_ to the template format
+    - Please see [EnableCodeInterpreter](https://github.com/saurav-datta/zs-take-home/blob/main/images/EnableCodeInterpreter.png) to enable and replicate the steps at your end
 - You can see the chat history in [chat_history_code_interpreter.html](https://htmlpreview.github.io/?https://github.com/saurav-datta/zs-take-home/blob/main/script_chat_prompts/chat_history_code_interpreter.html)
 - I asked ChatGPT to save the transformations to a Python file [transformations.py](https://github.com/saurav-datta/zs-take-home/blob/main/data_output/transformations.py) 
 - The transformed files are present as _transformed_data_A_updated.csv_ and _transformed_data_B_updated.csv_, see [HERE](https://github.com/saurav-datta/zs-take-home/tree/main/data_output)
