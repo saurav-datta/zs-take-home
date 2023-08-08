@@ -20,6 +20,23 @@
 - I asked ChatGPT to apply the transformations to the new files using the new config. See chat history at  [chat_history_code_interpreter.html](https://htmlpreview.github.io/?https://github.com/saurav-datta/zs-take-home/blob/main/script_chat_prompts/chat_history_code_interpreter.html)
 - The transformed files are present as _transformed_data_C.csv_ and _transformed_data_D.csv_, see [HERE](https://github.com/saurav-datta/zs-take-home/tree/main/data_output)
 
+## Observations
+- If the fields in _template.csv_ are a subset of the valid fields in a file, ChatGPT, tends to skip the additional fields.
+    - For instance, fields _Hobby_ and _MaritalStatus_ in _table_B.csv_ were initally not considered. 
+      - Refer to chat history "The following changes need to be done for table_B.csv"
+- When the fields were included, some other fields for _table_B.csv_ were excluded. Refer to chat history "The config file for table_B.csv needs to be updated"
+- Some of the contents of _table_B.csv_ do not match their name. The field _PlanType_ contains _FirstName_  
+
+## Additional challenge
+- I asked "Code Interpreter" to save the transformations in a Python file and create a config file that will refer to the function in the Python file.
+- These two file will make the process reusable and recreatable.
+
+## Edge cases
+- Mixed values in a field. If, for instance, field _PlanType_ were to hold PlanType as well as FirstName. We would have to select rows from this field
+- Complex transformations may need to be handcoded. These can be saved in _transformations.py_ and the function name updated in _config.json_
+- There may be fields with empty or Null values. We will need an instruction if this were to be the case
+ 
+
 ## Steps to replicate
 - Create your equivalent files for _table_C.csv_ and _table_D.csv_
 - No change to _template.csv_ 
