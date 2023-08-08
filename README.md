@@ -23,8 +23,8 @@
 ## Observations
 - If the fields in _template.csv_ are a subset of the valid fields in a file, ChatGPT, tends to skip the additional fields.
     - For instance, fields _Hobby_ and _MaritalStatus_ in _table_B.csv_ were initally not considered. 
-      - Refer to chat history "The following changes need to be done for table_B.csv"
-- When the fields were included, some other fields for _table_B.csv_ were excluded. Refer to chat history "The config file for table_B.csv needs to be updated"
+      - Refer to chat history _The following changes need to be done for table_B.csv_
+- When the fields were included, some other fields for _table_B.csv_ were excluded. Refer to chat history _The config file for table_B.csv needs to be updated_
 - Some of the contents of _table_B.csv_ do not match their name. The field _PlanType_ contains _FirstName_  
 
 ## Additional challenge
