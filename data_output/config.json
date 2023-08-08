@@ -1,0 +1,56 @@
+{
+  "template": "template.csv",
+  "files": [
+    {
+      "input_file": "table_A.csv",
+      "output_file": "transformed_data_A.csv",
+      "mapping": {
+        "Date_of_Policy": {
+          "field": "Date",
+          "transformation": "transform_date_mm_dd_yyyy"
+        },
+        "FullName": {
+          "field": "EmployeeName"
+        },
+        "Insurance_Plan": {
+          "field": "Plan"
+        },
+        "Policy_No": {
+          "field": "PolicyNumber",
+          "transformation": "remove_dashes"
+        },
+        "Monthly_Premium": {
+          "field": "Premium"
+        }
+      }
+    },
+    {
+      "input_file": "table_B.csv",
+      "output_file": "transformed_data_B.csv",
+      "mapping": {
+        "PolicyDate": {
+          "field": "Date",
+          "transformation": "transform_date_mm_dd_yyyy"
+        },
+        "Employee_Name": {
+          "field": "EmployeeName"
+        },
+        "Plan_Name": {
+          "field": "Plan"
+        },
+        "PolicyID": {
+          "field": "PolicyNumber"
+        },
+        "Cost": {
+          "field": "Premium"
+        },
+        "Hobby": {
+          "field": "Hobby"
+        },
+        "MaritalStatus": {
+          "field": "MaritalStatus"
+        }
+      }
+    }
+  ]
+}
